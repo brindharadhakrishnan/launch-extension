@@ -1,0 +1,24 @@
+{
+  "displayName": "Clean-up String Util",
+  "name": "clean-string-util",
+  "platform": "web",
+  "version": "1.0.0",
+  "description": "Cleans up the text by removing spaces and converting characters to lowercase",
+  "author": {
+    "name": "Brindha Radhakrishnan"
+  },
+  "viewBasePath": "src/view/",
+  "dataElements": [
+    {
+      "displayName": "clean-text-ext",
+      "name": "clean-text-ext",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/dataElements/cleanTextExt.js",
+      "viewPath": "dataElements/cleanTextExt.html"
+    }
+  ]
+}

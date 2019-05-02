@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clean up String Data element</title>
+</head>
+
+<body>
+    <b> Input String: </b>
+    <input id="ipString" type="text"/>
+    <p>
+        <em>Please note that the value can not be empty, 0, false, or any other 'false-y" value
+        </em>
+    </p>
+    <script src="https://assets.adobedtm.com/activation/reactor/extensionbridge/extensionbridge.min.js"></script>
+    <script>
+        window.extensionBridge.register({
+            init: function (info) {
+                if (info.settings) {
+                    /* Populate form values from persisted settings */
+                    document.querySelector("#ipString").value = info.settings.value;
+                }
+            },
+
+            getSettings: function () {
+                /* Return settings object from form values */
+                return{
+                    value: document.querySelector("#ipString").value
+                }
+            },
+
+            validate: function () {
+                /* Return whether settings are valid */
+                var value = document.querySelector("#ipString").value;
+                var valid = false;
+                if('undefined' !== typeof value && value && value.length > 0) {
+                    valid = true;
+                }
+                return valid;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "util-clean-string",
+  "version": "1.0.0",
+  "description": "This is to clean the strings by trimming the spaces and converting the characters to lowercase.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sandbox": "reactor-sandbox"
+  },
+  "author": "Brindha Radhakrishnan",
+  "license": "ISC",
+  "devDependencies": {
+    "@adobe/reactor-sandbox": "^10.4.2",
+    "@adobe/reactor-scaffold": "^2.1.2",
+    "@adobe/reactor-turbine": "^25.4.1"
+  }
+}
